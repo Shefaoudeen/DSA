@@ -1,0 +1,12 @@
+To solve this problem, you can follow a greedy algorithm approach. The idea is to sort both the greed factors g and cookie sizes s in ascending order. Then, iterate through the sorted lists and try to assign the smallest available cookie to the child with the smallest greed factor that can be satisfied by that cookie. This way, you ensure that you maximize the number of content children.
+
+The general steps for the approach would be:
+
+Sort the lists g and s in ascending order.
+Initialize two pointers, one for g and one for s, pointing to the beginning of the sorted lists.
+Iterate through the sorted lists and check if the current cookie size is sufficient to satisfy the current child's greed factor.
+If yes, increment both pointers and count the content child.
+If no, only increment the pointer for s to try the next available cookie.
+By following this approach, you can efficiently find the maximum number of content children without wasting cookies on children with higher greed factors. This is based on the idea that by starting with the smallest greed factors and assigning the smallest available cookies, you maximize the overall contentment.
+HAPPY NEW YEAR 🎉 2024
+ENJOY CODING!😄
